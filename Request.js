@@ -1,5 +1,5 @@
 class Request {
-  constructor(u, c){
+  constructor(u, c, p){
     this.url = u;
     this.path = u.pathname;
     this.query = u.search.slice(1);
@@ -7,6 +7,9 @@ class Request {
     this.fingerprint = c.fingerprint;
     this.params = {};
     this.baseUrl = '';
+    this.data = null;
+    this.titanParams = {};
+    this.protocol = p;
   }
 }
 

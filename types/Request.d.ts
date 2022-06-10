@@ -15,4 +15,5 @@ declare class Request {
   fingerprint: string;
   params: Record<string, string>;
   baseUrl: string;
+  data: Buffer;
 }
